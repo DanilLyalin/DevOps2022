@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/game")
+@WebServlet("/")
 public class MainServlet extends HttpServlet {
 
     @Override
