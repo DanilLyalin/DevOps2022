@@ -1,1 +1,1 @@
-web: java -cp target/classes:target/dependency/* org.spbstu.servlet.MainServlet
+web: sh target/bin/webapp
