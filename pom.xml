@@ -13,6 +13,13 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
+    <configuration>
+        <appName>tetris-web-app</appName>
+        <processTypes>
+            <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
+        </processTypes>
+    </configuration>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -54,6 +61,11 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.heroku.sdk</groupId>
+                <artifactId>heroku-maven-plugin</artifactId>
+                <version>3.0.5</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
