@@ -9,6 +9,6 @@ public class DemoController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index() {
-        return "Hello Evgeniy Alekseevich";
+        return "Hello world";
     }
 }
